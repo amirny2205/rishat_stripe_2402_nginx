@@ -8,6 +8,7 @@ sudo cp ./rishat /etc/nginx/sites-available/
 sudo ln -s /etc/nginx/sites-available/rishat /etc/nginx/sites-enabled/
 sudo systemctl reload nginx
 ```
-Не забудьте, что чтобы django был виден иначе чем на localhost, его нужно запускать как `./manage.py runserver 0.0.0.0:8000`
+Не забудьте, что чтобы django был виден не только на localhost, его нужно запускать как `./manage.py runserver 0.0.0.0:8000`
 
 в конфиге указан порт 80, чтобы не было конфликтов с дефолтной конфигурацией, вам нужно удалить файл `default` из `sites-enabled` или `conf.d` в папке `/etc/nginx`
+
