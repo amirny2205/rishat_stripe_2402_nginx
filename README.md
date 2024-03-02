@@ -1,3 +1,5 @@
+Сервис используется в https://github.com/amirny2205/rishat_stripe_2402_compose
+
 ### Чтобы использовать конфиг без docker:
 В файле rishat поменяйте строчку `enter_address_here` на адрес в формате `http://192.168.2.172:8000` или название соответствующего сервиса в docker-compose. Если запускаете на локальной машине с бекендом, строчка будет `proxy_pass http://localhost:8000;`
 
